@@ -12,6 +12,10 @@ export default function (api) {
   const tempPath = Slash2(Path.join(absNodeModulesPath, ".antd-themes"));
   const userConfig = api.userConfig.antdThemes;
 
+  if (!(userConfig && userConfig.themes && userConfig.themes.length > 0)) {
+    return;
+  }
+
   // 增加中间件
   api.addMiddewares(() => ServeStatic(tempPath));
 
