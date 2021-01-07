@@ -1,10 +1,10 @@
-const Path = require("path");
-const ServeStatic = require("serve-static");
-const RimRaf = require("rimraf");
 const Fs = require("fs");
+const Path = require("path");
 
-const AntdProMergeLess = require("antd-pro-merge-less");
 const Slash2 = require("slash2");
+const RimRaf = require("rimraf");
+const ServeStatic = require("serve-static");
+const AntdProMergeLess = require("antd-pro-merge-less");
 
 export default function (api) {
   const { cwd, absOutputPath, absNodeModulesPath } = api.paths;
@@ -65,7 +65,7 @@ export default function (api) {
       userConfig.options
     )
       .then(() => {
-        api.logger.log("🎊  build theme success");
+        api.logger.info("🎊  build theme success");
       })
       .catch((e) => {
         console.log(e);
@@ -107,7 +107,7 @@ export default function (api) {
       userConfig.options
     )
       .then(() => {
-        api.logger.log("🎊  build theme success");
+        api.logger.info("🎊  build theme success");
       })
       .catch((e) => {
         console.log(e);
