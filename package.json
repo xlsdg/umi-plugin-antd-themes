@@ -1,0 +1,35 @@
+{
+  "name": "umi-plugin-antd-theme-v2",
+  "version": "1.0.0",
+  "description": "antd theme plugin",
+  "authors": {
+    "name": "xLsDg",
+    "email": "xlsdg@qq.com"
+  },
+  "repository": "https://github.com/xlsdg/umi-plugin-ant-theme-v2.git",
+  "peerDependencies": {
+    "umi": "3.x"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "father-build",
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "father-build": "^1.19.1",
+    "umi": "^3.3.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "antd-pro-merge-less": "^3.0.11",
+    "rimraf": "^3.0.2",
+    "serve-static": "^1.14.1",
+    "slash2": "^2.0.0"
+  }
+}
