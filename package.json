@@ -1,12 +1,12 @@
 {
-  "name": "umi-plugin-antd-theme-v2",
+  "name": "umi-plugin-antd-themes",
   "version": "1.0.1",
-  "description": "antd theme plugin",
+  "description": "antd themes plugin",
   "authors": {
     "name": "xLsDg",
     "email": "xlsdg@qq.com"
   },
-  "repository": "https://github.com/xlsdg/umi-plugin-ant-theme-v2.git",
+  "repository": "https://github.com/xlsdg/umi-plugin-antd-themes.git",
   "peerDependencies": {
     "umi": "3.x"
   },
@@ -18,12 +18,13 @@
     "release:patch": "npm version patch && npm publish"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "father-build": "^1.19.1",
-    "umi": "^3.3.3"
+    "father-build": "^1.19.1"
   },
   "files": [
     "lib"
+  ],
+  "keywords": [
+    "umi"
   ],
   "license": "MIT",
   "dependencies": {

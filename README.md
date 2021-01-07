@@ -1,14 +1,14 @@
-# umi-plugin-antd-theme-v2
+# umi-plugin-antd-themes
 
-> antd theme plugin
+> antd themes plugin
 
-[![NPM version](https://img.shields.io/npm/v/umi-plugin-antd-theme-v2.svg?style=flat)](https://npmjs.org/package/umi-plugin-antd-theme-v2) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-antd-theme-v2.svg?style=flat)](https://npmjs.org/package/umi-plugin-antd-theme-v2)
+[![NPM version](https://img.shields.io/npm/v/umi-plugin-antd-themes.svg?style=flat)](https://npmjs.org/package/umi-plugin-antd-themes) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-antd-themes.svg?style=flat)](https://npmjs.org/package/umi-plugin-antd-themes)
 
 ## Usage
 
 ```js
 export default {
-  antdTheme: {
+  antdThemes: {
     themes: [
       {
         key: "dust-red",

@@ -6,11 +6,11 @@ const Fs = require("fs");
 const AntdProMergeLess = require("antd-pro-merge-less");
 const Slash2 = require("slash2");
 
-export default function(api) {
+export default function (api) {
   const { cwd, absOutputPath, absNodeModulesPath } = api.paths;
   const outputPath = absOutputPath;
-  const tempPath = Slash2(Path.join(absNodeModulesPath, ".antd-theme"));
-  const userConfig = api.userConfig.antdTheme;
+  const tempPath = Slash2(Path.join(absNodeModulesPath, ".antd-themes"));
+  const userConfig = api.userConfig.antdThemes;
 
   // 增加中间件
   api.addMiddewares(() => ServeStatic(tempPath));
@@ -24,7 +24,7 @@ export default function(api) {
 
   // 配置
   api.describe({
-    key: "antdTheme",
+    key: "antdThemes",
     config: {
       schema(joi) {
         return joi.object({
